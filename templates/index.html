@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StatementX</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>📄 StatementX</h1>
+    <p>Bank Statement Extractor</p>
+
+    <form action="/extract" method="POST" enctype="multipart/form-data">
+        <input type="file" name="pdf" accept=".pdf" required>
+        <br><br>
+        <button type="submit">Extract Transactions</button>
+    </form>
+
+</div>
+
+</body>
+</html>
